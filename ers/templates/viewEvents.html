@@ -1,0 +1,94 @@
+{% extends 'index.html' %}
+
+{% block title %} 
+Bicep
+{% endblock title %}
+
+
+
+{% block body %}
+
+<div 
+  id="fp-header-image" 
+  class="hgrid-stretch" 
+  style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; background-color: white;">
+  <img 
+    width="500" 
+    alt="Events in Karachi" 
+    src="/static/event.webp" 
+    class="cwvlazyload shareaholic-media-target-hover-state" 
+    data-loaded="true" 
+    style="max-width: 100%; height: auto; opacity: 0; animation: fadeIn 2s forwards;">
+</div>
+
+<style>
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+
+
+
+
+  <div id="frontpage-area_a" 
+     class="frontpage-area_a frontpage-area frontpage-widgetarea module-bg-dark-gray module-font-theme frontpage-area-stretch" 
+     style="padding: 20px; background-color:rgb(29, 95, 104); color: #fff;">
+  <div class="hgrid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <!-- Left Section -->
+    <div id="frontpage-area_a_1" style="flex: 3; display: flex; gap: 20px; flex-wrap: wrap;">
+      <!-- Block 1 -->
+      <div style="flex: 1 1 18%; text-align: center;">
+        <a href="/carnival" style="text-decoration: none; color: #fff;">
+          <div style="font-size: 2em; color: #f5c518;"><i class="fas fa-drum"></i></div>
+          <img src="static/carnival.jpeg" style="height: 50px; width: 50px; border-radius: 100px"></img>
+          <p style="margin: 10px 0; font-size: 1.1em;">Concerts &amp; Carnivals</p>
+        </a>
+      </div>
+      <!-- Block 2 -->
+      <div style="flex: 1 1 18%; text-align: center;">
+        <a href="http://eventsinkarachi.com/category/expo/" style="text-decoration: none; color: #fff;">
+          <div style="font-size: 2em; color: #ff5733;"><i class="fas fa-image"></i></div>
+          <img src="static/exibition2.jpeg" style="height: 50px; width: 50px; border-radius: 100px"></img>
+          <p style="margin: 10px 0; font-size: 1.1em;">Exhibitions</p>
+        </a>
+      </div>
+      <!-- Block 3 -->
+      {% comment %} <div style="flex: 1 1 18%; text-align: center;">
+        <a href="http://eventsinkarachi.com/category/picnics-travelling/" style="text-decoration: none; color: #fff;">
+          <div style="font-size: 2em; color: #33aaff;"><i class="fas fa-umbrella-beach"></i></div>
+          <p style="margin: 10px 0; font-size: 1.1em;">Picnics &amp; Travelling</p>
+        </a>
+      </div> {% endcomment %}
+      <!-- Block 4 -->
+      <div style="flex: 1 1 18%; text-align: center;">
+        <a href="http://eventsinkarachi.com/category/music-festivals/" style="text-decoration: none; color: #fff;">
+          <div style="font-size: 2em; color: #28a745;"><i class="fas fa-play-circle"></i></div>
+          <img src="static/music.jpeg" style="height: 50px; width: 50px; border-radius: 100px"></img>
+          <p style="margin: 10px 0; font-size: 1.1em;">Music Festivals</p>
+        </a>
+      </div>
+      <!-- Block 5 -->
+      <div style="flex: 1 1 18%; text-align: center;">
+        <a href="http://eventsinkarachi.com/category/theatre-plays/" style="text-decoration: none; color: #fff;">
+          <div style="font-size: 2em; color: #6f42c1;"><i class="fas fa-theater-masks"></i></div>
+          <img src="static/threater.jpeg" style="height: 50px; width: 50px; border-radius: 100px"></img>
+          <p style="margin: 10px 0; font-size: 1.1em;">Theatre / Play &amp; Comedy</p>
+        </a>
+      </div>
+    </div>
+    <!-- Right Section -->
+    <div id="frontpage-area_a_2" style="flex: 1; text-align: center;">
+      <a href="http://eventsinkarachi.com/category/educational-events/" style="text-decoration: none; color: #fff;">
+        <div style="font-size: 2em; color: #fd7e14;"><i class="far fa-address-card"></i></div>
+        <img src="static/educational.jpeg" style="height: 50px; width: 50px; border-radius: 100px"></img>
+        <p style="margin: 10px 0; font-size: 1.1em;">Educational Events</p>
+      </a>
+  </div>
+
+</div>
+
+
+
+
+{% endblock body %}
